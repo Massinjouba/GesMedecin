@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GestionMedecin"
         mc:Ignorable="d"
         Title="WinConsultation" Height="450" Width="800">
-    <Grid>
+    <Grid Background="LightGray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
@@ -16,7 +16,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <ToolBarTray Margin="20">
-            <ToolBar>
+            <ToolBar Background="#4682B4">
                 <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
                     <Button x:Name="BtnAccueil" ToolTip="Revenir a Accueil" Content="🏠 " Width="50" Height="50"/>
                     <Label Content="Accueil"  Width="50" Height="50" VerticalContentAlignment="Center" FontWeight="Bold"/>
@@ -24,7 +24,7 @@
             </ToolBar>
         </ToolBarTray>
         <TabControl TabStripPlacement="Left" Grid.Row="1">
-            <TabItem Header="information personnel" Margin="5" Height="50">
+            <TabItem Header="information personnel" Margin="5" Height="50" Background="#E0FFFF">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
@@ -56,7 +56,7 @@
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="Coordonne" Margin="5" Height="50">
+            <TabItem Header="Coordonne" Margin="5" Height="50" Background="#E0FFFF">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
@@ -85,7 +85,7 @@
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="confirmation" Margin="5" Height="50" >
+            <TabItem Header="confirmation" Margin="5" Height="50" Background="#E0FFFF">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
@@ -101,17 +101,17 @@
                         <ComboBox  x:Name="Cbspe2" Width="200" Height="25"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1">
-                    <Label  Content="Medecin" Width="100" Height="25" FontWeight="Bold" HorizontalContentAlignment="Center"/>
-                    <TextBox  x:Name="TbMedecin2" Width="200" Height="25"/>
+                        <Label  Content="Medecin" Width="100" Height="25" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+                        <TextBox  x:Name="TbMedecin2" Width="200" Height="25"/>
                     </StackPanel>
-                    <DataGrid Name="dgSimple3" Grid.Row="1" Grid.ColumnSpan="2" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="Gray"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns = "False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
+                    <DataGrid Name="dgSimple3" Grid.Row="1" Grid.ColumnSpan="2" Background="#F0F8FF" RowBackground="#FFFFE0" AlternatingRowBackground="#ADD8E6" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="#A9A9A9"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns="False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
                     <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
-                        <Button x:Name="BtnPre2" Content="Precedent" Margin="2" Width="100" HorizontalAlignment="Right" Height="35"/>
+                        <Button x:Name="BtnPre2" Content="
+Precedent" Margin="2" Width="100" HorizontalAlignment="Right" Height="35"/>
                         <Button x:Name="BtnTerminer" Content="Terminer" Margin="2" Width="100" HorizontalAlignment="Right" Height="35"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
         </TabControl>
     </Grid>
-    
 </Window>

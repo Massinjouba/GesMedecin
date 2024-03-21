@@ -7,15 +7,16 @@
         xmlns:local="clr-namespace:GestionMedecin"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Menu Grid.Row="0">
+        <Menu Grid.Row="0" Background="#00BFFF">
+            <!-- Utilisation d'une couleur bleue pour le fond du menu -->
             <MenuItem Header="🏥 Accueil" >
-                <MenuItem Header="Enrengistrer"/>
+                <MenuItem Header="Enregistrer"/>
                 <MenuItem Header="Importer"/>
                 <MenuItem Header="Fermer"/>
             </MenuItem>
@@ -35,7 +36,8 @@
                 <MenuItem Header="supprimée"/>
             </MenuItem>
         </Menu>
-        <ToolBarTray Grid.Row="1">
+        <ToolBarTray Grid.Row="1" Background="#4682B4">
+            <!-- Utilisation d'une couleur bleu acier pour le fond de la barre d'outils -->
             <ToolBar>
                 <DockPanel>
                     <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
@@ -51,7 +53,8 @@
         </ToolBarTray>
         <TabControl Grid.Row="2">
             <TabItem Header="Spécialité 🧠">
-                <Grid>
+                <Grid Background="#E0FFFF">
+                    <!-- Utilisation d'une couleur aqua pour le fond du premier onglet -->
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="auto"/>
@@ -74,7 +77,7 @@
                         <Label Content="Nom" Width="100" FontWeight="Bold"/>
                         <TextBox x:Name="tbName" Width="200"/>
                     </StackPanel>
-                    <StackPanel Grid.Column="3" Grid.Row="1" Orientation="Horizontal" Margin="4">
+                    <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Description" Width="100" FontWeight="Bold"/>
                         <TextBox x:Name="tbDescription" Width="250" />
                     </StackPanel>
@@ -83,11 +86,12 @@
                         <Button x:Name="BtnDelete" Content=" Modifier" Margin="2" Width="100" HorizontalAlignment="Right"/>
                         <Button x:Name="BtnUpdate" Content="Supprimer" Margin="2" Width="100" HorizontalAlignment="Right"/>
                     </StackPanel>
-                    <DataGrid Name="dgSimple" Grid.ColumnSpan="2" Grid.Row="7" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="Gray"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns = "False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
+                    <DataGrid Name="dgSimple" Grid.ColumnSpan="2" Grid.Row="7" Background="#F0F8FF" RowBackground="#FFFFE0" AlternatingRowBackground="#ADD8E6" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="#A9A9A9"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns="False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Medecin 🔬">
-                <Grid>
+                <Grid Background="#E0FFFF">
+                    <!-- Utilisation d'une couleur aqua pour le fond du deuxième onglet -->
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -114,15 +118,16 @@
                         <Label Content="Prenom" Width="100" FontWeight="Bold"/>
                         <TextBox x:Name="tbPrenom" Width="200"/>
                     </StackPanel>
-                    <StackPanel  Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="4">
+                    <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Spécialité" Width="100" FontWeight="Bold"/>
                         <ComboBox x:Name="CbSpe" Width="200"/>
                     </StackPanel>
-                    <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="4">
+                    <StackPanel Grid.Row="2" Grid.Column="1" Orientation="
+Horizontal" Margin="4">
                         <Label Content="Telephone" Width="100" FontWeight="Bold"/>
                         <TextBox x:Name="tbTel" Width="200"/>
                     </StackPanel>
-                    <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal" Margin="4">
+                    <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Salaire" Width="100" FontWeight="Bold"/>
                         <TextBox x:Name="tbSalaire" Width="200"/>
                     </StackPanel>
@@ -131,10 +136,9 @@
                         <Button x:Name="BtnDelete2" Content=" Modifier" Margin="2" Width="100" HorizontalAlignment="Right"/>
                         <Button x:Name="BtnUpdate2" Content="Supprimer" Margin="2" Width="100" HorizontalAlignment="Right"/>
                     </StackPanel>
-                    <DataGrid Name="dgSimple2" Grid.Row="7" Grid.ColumnSpan="2" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="Gray"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns = "False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
+                    <DataGrid Name="dgSimple2" Grid.Row="7" Grid.ColumnSpan="2" Background="#F0F8FF" RowBackground="#FFFFE0" AlternatingRowBackground="#ADD8E6" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="#A9A9A9"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns="False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
                 </Grid>
             </TabItem>
         </TabControl>
-
     </Grid>
 </Window>
