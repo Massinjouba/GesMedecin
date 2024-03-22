@@ -50,7 +50,7 @@
             </ToolBar>
         </ToolBarTray>
         <TabControl Grid.Row="2">
-            <TabItem Header="Spécialité 🧠" Height="20" VerticalAlignment="Bottom">
+            <TabItem Header="Spécialité 🧠">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20"/>
@@ -68,7 +68,7 @@
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Identifiant" Width="100" FontWeight="Bold"/>
-                        <TextBox x:Name="tbIdSpe" Width="200" MaxLength="5"/>
+                        <TextBox x:Name="tbIdSpe" Width="200"/>
                     </StackPanel>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="4">
                         <Label Content="Nom" Width="100" FontWeight="Bold"/>
@@ -133,7 +133,7 @@
                         <TextBox x:Name="tbSalaire" Width="200"/>
                     </StackPanel>
                     <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
-                        <Button x:Name="BtnAdd2" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnAdd2_Click"/>
+                        <Button x:Name="BtnAdd2" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right"/>
                         <Button x:Name="BtnDelete2" Content=" Modifier" Margin="2" Width="100" HorizontalAlignment="Right"/>
                         <Button x:Name="BtnUpdate2" Content="Supprimer" Margin="2" Width="100" HorizontalAlignment="Right"/>
                     </StackPanel>
