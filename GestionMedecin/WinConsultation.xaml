@@ -23,7 +23,7 @@
                 </StackPanel>
             </ToolBar>
         </ToolBarTray>
-        <TabControl TabStripPlacement="Left" Grid.Row="1">
+        <TabControl x:Name="MainTabControl" TabStripPlacement="Left" Grid.Row="1">
             <TabItem Header="information personnel" Margin="5" Height="50" Background="#E0FFFF">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -56,7 +56,7 @@
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="Coordonne" Margin="5" Height="50" Background="#E0FFFF">
+            <TabItem x:Name="TabItemCoordonne" Header="Coordonne" Margin="5" Height="50" Background="#E0FFFF">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
@@ -85,7 +85,7 @@
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="confirmation" Margin="5" Height="50" Background="#E0FFFF">
+            <TabItem x:Name="TabItemConfirmation" Header="confirmation" Margin="5" Height="50" Background="#E0FFFF">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
@@ -104,10 +104,9 @@
                         <Label  Content="Medecin" Width="100" Height="25" FontWeight="Bold" HorizontalContentAlignment="Center"/>
                         <TextBox  x:Name="TbMedecin2" Width="200" Height="25"/>
                     </StackPanel>
-                    <DataGrid Name="dgSimple3" Grid.Row="1" Grid.ColumnSpan="2" Background="#F0F8FF" RowBackground="#FFFFE0" AlternatingRowBackground="#ADD8E6" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="#A9A9A9"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns="False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
+                    <DataGrid Name="dgSimple3" AutoGenerateColumns="True" Grid.Row="1" Grid.ColumnSpan="2" Background="#F0F8FF" RowBackground="#FFFFE0" AlternatingRowBackground="#ADD8E6" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="#A9A9A9"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns="False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
                     <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
-                        <Button x:Name="BtnPre2" Content="
-Precedent" Margin="2" Width="100" HorizontalAlignment="Right" Height="35"/>
+                        <Button x:Name="BtnPre2" Content="Precedent" Margin="2" Width="100" HorizontalAlignment="Right" Height="35"/>
                         <Button x:Name="BtnTerminer" Content="Terminer" Margin="2" Width="100" HorizontalAlignment="Right" Height="35"/>
                     </StackPanel>
                 </Grid>
