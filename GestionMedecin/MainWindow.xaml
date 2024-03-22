@@ -50,7 +50,7 @@
             </ToolBar>
         </ToolBarTray>
         <TabControl Grid.Row="2">
-            <TabItem Header="Spécialité 🧠">
+            <TabItem Header="Spécialité 🧠" Height="20" VerticalAlignment="Bottom">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20"/>
@@ -68,22 +68,28 @@
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Identifiant" Width="100" FontWeight="Bold"/>
-                        <TextBox x:Name="tbId" Width="200"/>
+                        <TextBox x:Name="tbIdSpe" Width="200" MaxLength="5"/>
                     </StackPanel>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="4">
                         <Label Content="Nom" Width="100" FontWeight="Bold"/>
-                        <TextBox x:Name="tbName" Width="200"/>
+                        <TextBox x:Name="tbNameSpe" Width="200"/>
                     </StackPanel>
                     <StackPanel Grid.Column="3" Grid.Row="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Description" Width="100" FontWeight="Bold"/>
-                        <TextBox x:Name="tbDescription" Width="250" />
+                        <TextBox x:Name="tbDescriptionSpe" Width="250" />
                     </StackPanel>
                     <StackPanel Grid.Row="5" Orientation="Horizontal"  Grid.RowSpan="2" Margin="4">
-                        <Button x:Name="BtnAdd" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right"/>
-                        <Button x:Name="BtnDelete" Content=" Modifier" Margin="2" Width="100" HorizontalAlignment="Right"/>
-                        <Button x:Name="BtnUpdate" Content="Supprimer" Margin="2" Width="100" HorizontalAlignment="Right"/>
+                        <Button x:Name="BtnAdd" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnAdd_Click"/>
+                        <Button x:Name="BtnUpdate" Content=" Modifier" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnUpdate_Click"/>
+                        <Button x:Name="BtnDelete" Content="Supprimer" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnDelete_Click"/>
                     </StackPanel>
-                    <DataGrid Name="dgSimple" Grid.ColumnSpan="2" Grid.Row="7" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="Gray"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns = "False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
+                    <DataGrid Name="dgSimple" Grid.ColumnSpan="2" Grid.Row="7" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="Gray"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns = "False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID " Binding="{Binding Path=IdSpe}"/>
+                            <DataGridTextColumn Header="Nom " Binding="{Binding Path=NameSpe}"/>
+                            <DataGridTextColumn Header="Description" Binding="{Binding Path=DescriptionSpe}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
             </TabItem>
             <TabItem Header="Medecin 🔬">
@@ -127,7 +133,7 @@
                         <TextBox x:Name="tbSalaire" Width="200"/>
                     </StackPanel>
                     <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
-                        <Button x:Name="BtnAdd2" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right"/>
+                        <Button x:Name="BtnAdd2" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnAdd2_Click"/>
                         <Button x:Name="BtnDelete2" Content=" Modifier" Margin="2" Width="100" HorizontalAlignment="Right"/>
                         <Button x:Name="BtnUpdate2" Content="Supprimer" Margin="2" Width="100" HorizontalAlignment="Right"/>
                     </StackPanel>

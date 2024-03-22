@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k2k4Qte3doAaeh0c8jcJ6CzV7s1bCe0T0TM5YFlO4oW19e9IC6kV2OOytl4ZZWTFih8hUsB45MEySgPsXU9qhw==",
+  "dgSpecHash": "bfEZbtg1Y5zumRN2dsGNurilJ7/v+lJt9SEAWPyJ/IQiAB0WGBKaSZoOK3e6bGoXgKfJYPesoHMgYCbbqiQvYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Massinissa\\source\\repos\\GestionMedecin\\GestionMedecin.csproj",
+  "projectFilePath": "C:\\Users\\Massinissa\\OneDrive\\Bureau\\allo\\librarymanagement-ua3-Massinjouba\\GesMedecin\\GestionMedecin\\GestionMedecin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Massinissa\\.nuget\\packages\\emoji.wpf\\0.3.4\\emoji.wpf.0.3.4.nupkg.sha512",
     "C:\\Users\\Massinissa\\.nuget\\packages\\jeremyansel.hlsl.targets\\1.0.13\\jeremyansel.hlsl.targets.1.0.13.nupkg.sha512",
