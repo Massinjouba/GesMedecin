@@ -68,7 +68,7 @@
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Identifiant" Width="100" FontWeight="Bold"/>
-                        <TextBox x:Name="tbIdSpe" Width="200"/>
+                        <TextBox x:Name="tbIdSpe" Width="200" MaxLength="5"/>
                     </StackPanel>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="4">
                         <Label Content="Nom" Width="100" FontWeight="Bold"/>
@@ -76,7 +76,7 @@
                     </StackPanel>
                     <StackPanel Grid.Column="3" Grid.Row="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Description" Width="100" FontWeight="Bold"/>
-                        <TextBox x:Name="tbDescriptionSpe" Width="250" />
+                        <TextBox x:Name="tbDescriptionSpe" Width="250" MaxLength="200"/>
                     </StackPanel>
                     <StackPanel Grid.Row="5" Orientation="Horizontal"  Grid.RowSpan="2" Margin="4">
                         <Button x:Name="BtnAdd" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnAdd_Click"/>
@@ -92,7 +92,7 @@
                     </DataGrid>
                 </Grid>
             </TabItem>
-            <TabItem Header="Medecin 🔬">
+            <TabItem Header="Medecin 🔬" Height="20" VerticalAlignment="Top">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -110,7 +110,7 @@
                     </Grid.RowDefinitions>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Identifiant" Width="100" FontWeight="Bold"/>
-                        <TextBox x:Name="tbIdM" Width="200"/>
+                        <TextBox x:Name="tbIdM" Width="200" MaxLength="5"/>
                     </StackPanel>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="4">
                         <Label Content="Nom" Width="100" FontWeight="Bold"/>
@@ -126,18 +126,27 @@
                     </StackPanel>
                     <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="4">
                         <Label Content="Telephone" Width="100" FontWeight="Bold"/>
-                        <TextBox x:Name="tbTel" Width="200"/>
+                        <TextBox x:Name="tbTel" Width="200" MaxLength="10"/>
                     </StackPanel>
                     <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal" Margin="4">
                         <Label Content="Salaire" Width="100" FontWeight="Bold"/>
                         <TextBox x:Name="tbSalaire" Width="200"/>
                     </StackPanel>
                     <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
-                        <Button x:Name="BtnAdd2" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right"/>
-                        <Button x:Name="BtnDelete2" Content=" Modifier" Margin="2" Width="100" HorizontalAlignment="Right"/>
-                        <Button x:Name="BtnUpdate2" Content="Supprimer" Margin="2" Width="100" HorizontalAlignment="Right"/>
+                        <Button x:Name="BtnAdd2" Content="Ajouter" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnAdd2_Click"/>
+                        <Button x:Name="BtnUpdate2" Content=" Modifier" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnUpdate2_Click"/>
+                        <Button x:Name="BtnDelete2" Content="Supprimer" Margin="2" Width="100" HorizontalAlignment="Right" Click="BtnDelete2_Click"/>
                     </StackPanel>
-                    <DataGrid Name="dgSimple2" Grid.Row="7" Grid.ColumnSpan="2" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="Gray"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns = "False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
+                    <DataGrid Name="dgSimple2" Grid.ColumnSpan="2" Grid.Row="7" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="Gray"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns = "False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID " Binding="{Binding Path=IdMed}"/>
+                            <DataGridTextColumn Header="Nom " Binding="{Binding Path=NameMed}"/>
+                            <DataGridTextColumn Header="Prenom" Binding="{Binding Path=PrenomMed}"/>
+                            <DataGridTextColumn Header="Specialite " Binding="{Binding Path=SpeMed}"/>
+                            <DataGridTextColumn Header="Telephone" Binding="{Binding Path=TelMed}"/>
+                            <DataGridTextColumn Header="Salaire" Binding="{Binding Path=SalaireMed}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
             </TabItem>
         </TabControl>

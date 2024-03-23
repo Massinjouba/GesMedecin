@@ -1,19 +1,33 @@
 {
   "version": 2,
-  "dgSpecHash": "bfEZbtg1Y5zumRN2dsGNurilJ7/v+lJt9SEAWPyJ/IQiAB0WGBKaSZoOK3e6bGoXgKfJYPesoHMgYCbbqiQvYg==",
+  "dgSpecHash": "iImmIMqIayzERKbVP5w7tWGIrvmTxLTJWTmSac6zPyCDMTJax3iwcbEc1E0Dt7wMzkPzTjP5rveTbwWUZH3zTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Massinissa\\OneDrive\\Bureau\\allo\\librarymanagement-ua3-Massinjouba\\GesMedecin\\GestionMedecin\\GestionMedecin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Massinissa\\.nuget\\packages\\emoji.wpf\\0.3.4\\emoji.wpf.0.3.4.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\epplus\\7.0.10\\epplus.7.0.10.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\epplus.system.drawing\\6.1.1\\epplus.system.drawing.6.1.1.nupkg.sha512",
     "C:\\Users\\Massinissa\\.nuget\\packages\\jeremyansel.hlsl.targets\\1.0.13\\jeremyansel.hlsl.targets.1.0.13.nupkg.sha512",
-    "C:\\Users\\Massinissa\\.nuget\\packages\\stfu\\0.1.1\\stfu.0.1.1.nupkg.sha512"
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0\\microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0\\microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.0\\microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\stfu\\0.1.1\\stfu.0.1.1.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.4\\system.security.cryptography.pkcs.6.0.4.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Massinissa\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problème de lecture du fichier cache C:\\Users\\Massinissa\\OneDrive\\Bureau\\allo\\librarymanagement-ua3-Massinjouba\\GesMedecin\\GestionMedecin\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

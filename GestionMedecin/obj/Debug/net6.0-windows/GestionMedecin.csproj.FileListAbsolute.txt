@@ -85,3 +85,17 @@ C:\Users\dell\Downloads\GesMedecin\GestionMedecin\obj\Debug\net6.0-windows\Gesti
 C:\Users\dell\Downloads\GesMedecin\GestionMedecin\obj\Debug\net6.0-windows\GestionMedecin.genruntimeconfig.cache
 C:\Users\dell\Downloads\GesMedecin\GestionMedecin\obj\Debug\net6.0-windows\ref\GestionMedecin.dll
 >>>>>>> 933a2a2900f86a98991ebceebc8ca2f54b7fa9ec
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\EPPlus.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\EPPlus.Interfaces.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\EPPlus.System.Drawing.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Massinissa\OneDrive\Bureau\allo\librarymanagement-ua3-Massinjouba\GesMedecin\GestionMedecin\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

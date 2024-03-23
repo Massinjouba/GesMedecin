@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Emoji.Wpf" Version="0.3.4" />
+    <PackageReference Include="EPPlus" Version="7.0.10" />
   </ItemGroup>
 
 </Project>
