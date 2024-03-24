@@ -20,10 +20,19 @@ namespace GestionMedecin
     /// </summary>
     public partial class WinConsultation : Window
     {
+
         private ObservableCollection<PersonneInfo> listePersonnes = new ObservableCollection<PersonneInfo>();
-        public WinConsultation()
+        public WinConsultation(List<string> specialiteNames)
         {
             InitializeComponent();
+
+            // Parcourez chaque nom de spécialité
+            foreach (string name in specialiteNames)
+            {
+                // Ajoutez le nom de la spécialité à votre ComboBox
+                CbSpe2.Items.Add(name);
+            }
+
             // Ajoutez des gestionnaires d'événements pour les boutons
             BtnAccueil.Click += BtnAccueil_Click;
             BtnSuivant.Click += BtnSuivant_Click;
@@ -121,7 +130,7 @@ namespace GestionMedecin
                 Adresse = TbAdresse.Text,
                 Email = tbMail.Text,
                 Telephone = tbPhone.Text,
-                Specialite = Cbspe2.Text,
+                Specialite = CbSpe2.Text,
                 Medecin = TbMedecin2.Text
             };
 
@@ -144,12 +153,19 @@ namespace GestionMedecin
             TbAdresse.Clear();
             tbMail.Clear();
             tbPhone.Clear();
-            Cbspe2.Text = "";
+            CbSpe2.Text = "";
             TbMedecin2.Clear();
 
             // Sélectionner le premier onglet
             MainTabControl.SelectedItem = MainTabControl.Items[0];
         }
+
+        public void AddSpecialite(string specialite)
+        {
+            CbSpe2.Items.Add(specialite);
+        }
+
+
         public class PersonneInfo
         {
             public string? Nom { get; set; }

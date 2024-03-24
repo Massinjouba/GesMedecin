@@ -98,14 +98,19 @@
                     </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal">
                         <Label  Content="Specialite" Width="100" Height="25" FontWeight="Bold" HorizontalContentAlignment="Center"/>
-                        <ComboBox  x:Name="Cbspe2" Width="200" Height="25"/>
+                        <ComboBox  x:Name="CbSpe2" Width="200" Height="25"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1">
                         <Label  Content="Medecin" Width="100" Height="25" FontWeight="Bold" HorizontalContentAlignment="Center"/>
                         <TextBox  x:Name="TbMedecin2" Width="200" Height="25"/>
                     </StackPanel>
-                    <DataGrid Name="dgSimple3" AutoGenerateColumns="True" Grid.Row="1" Grid.ColumnSpan="2" Background="#F0F8FF" RowBackground="#FFFFE0" AlternatingRowBackground="#ADD8E6" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="#A9A9A9"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns="False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2"/>
-                    <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
+                    <DataGrid Name="dgSimple3" AutoGenerateColumns="True" Grid.Row="1" Grid.ColumnSpan="2" Background="#F0F8FF" RowBackground="#FFFFE0" AlternatingRowBackground="#ADD8E6" HorizontalScrollBarVisibility="Visible"  SelectionMode="Single" VerticalScrollBarVisibility="Visible"  BorderBrush="#A9A9A9"  BorderThickness="5" IsReadOnly="True" CanUserSortColumns="False"   AreRowDetailsFrozen="True" CanUserResizeColumns="False"  CanUserReorderColumns="True"  FrozenColumnCount="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nom " Binding="{Binding Path=NameMed2}"/>
+                            <DataGridTextColumn Header="Prenom" Binding="{Binding Path=prenomMed2}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                        <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
                         <Button x:Name="BtnPre2" Content="Precedent" Margin="2" Width="100" HorizontalAlignment="Right" Height="35"/>
                         <Button x:Name="BtnTerminer" Content="Terminer" Margin="2" Width="100" HorizontalAlignment="Right" Height="35"/>
                     </StackPanel>
